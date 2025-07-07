@@ -6,7 +6,12 @@ function Die({value, isHeld, hold, id}) {
 
     return (
         <>
-            <button className={isHeld ? "press" : ""} onClick={handleClick}>{value}</button>
+            <button 
+                className={isHeld ? "press" : ""} 
+                onClick={handleClick}
+                aria-pressed={isHeld}
+                aria-label={`Die with value ${value}, ${isHeld ? "held" : "not held"}`}
+            >{value}</button>
         </>
     )
 }

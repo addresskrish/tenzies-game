@@ -35,6 +35,10 @@ main {
   align-items: center;
 }
 
+main > h4 {
+  margin-top: 1rem;
+}
+
 .die {
   margin: 3rem;
   display: grid;
@@ -52,6 +56,7 @@ main {
   border: none;
   background-color: #ffffff;
   margin: 1rem;
+  margin-top: 0rem;
 }
 
 .rollBtn {
@@ -81,4 +86,16 @@ main {
   margin: 0rem 3rem;
   margin-top: 2rem;
   text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
